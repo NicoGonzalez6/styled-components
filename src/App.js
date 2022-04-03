@@ -1,11 +1,12 @@
 import styled from 'styled-components';
-import Card from './MyComponents/Card';
-import ComplexTitle from './MyComponents/ComplexTitle';
+import { DefaultButton } from './MyComponents/Buttons';
+import './index.css';
 
 function App() {
     return (
         <div style={{ padding: '2rem' }}>
-            <Card></Card>
+            <DefaultButton>Click Me</DefaultButton>
+            <DefaultButton large>Click Me</DefaultButton>
         </div>
     );
 }

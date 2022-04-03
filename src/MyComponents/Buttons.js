@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const DefaultButton = styled.button`
     background: #645cff;
@@ -7,10 +7,21 @@ export const DefaultButton = styled.button`
     border-radius: 0.25rem;
     cursor: pointer;
     text-transform: capitalize;
-    padding: 0.25rem;
+    font-weight: 400;
     display: block;
-    width: 200px;
     margin: 1rem auto;
+    ${({ large }) =>
+        large
+            ? css`
+                  padding: 1rem;
+                  font-size: 1.5rem;
+                  font-weight: 700;
+              `
+            : css`
+                  padding: 0.5rem;
+                  font-size: 1rem;
+                  font-weight: 400;
+              `}
 `;
 
 export const HippsterButton = styled(DefaultButton)`
