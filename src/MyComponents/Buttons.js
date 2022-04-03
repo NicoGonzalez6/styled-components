@@ -12,3 +12,10 @@ export const DefaultButton = styled.button`
     width: 200px;
     margin: 1rem auto;
 `;
+
+export const HippsterButton = styled(DefaultButton)`
+    width: 400px;
+    background-color: transparent;
+    color: #645cff;
+    border: 1px solid #645cff;
+`;
